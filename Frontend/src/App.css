@@ -1,0 +1,55 @@
+@theme {
+  --color-bony-50: #fbfbf8;
+  --color-bony-100: #f6f6f3;
+  --color-bony-200: #e9e4e2;
+  --color-bony-300: #d9d2ce;
+  --color-bony-400: #af9f97;
+  --color-bony-500: #806d64;
+  --color-bony-600: #5d5248;
+  --color-bony-700: #4b4038;
+  --color-bony-800: #2c2221;
+  --color-bony-900: #1f1814;
+  --color-bony-950: #0e0907;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

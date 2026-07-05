@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "name": "Web Development",
+      "slug": "web-development"
+    },
+    {
+      "name": "Data Science",
+      "slug": "data-science"
+    },
+    {
+      "name": "Design",
+      "slug": "design"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Intro to HTML & CSS",
+      "slug": "intro-html-css",
+      "shortDescription": "تعلم أساسيات HTML و CSS لإنشاء صفحات ويب بسيطة.",
+      "description": "دورة تمهيدية تشرح عناصر HTML وتصميم الصفحات باستخدام CSS، مع مشاريع عملية.",
+      "level": "beginner",
+      "price": 0,
+      "thumbnail": "./imges/3784896.jpg",
+      "tags": [
+        "html",
+        "css",
+        "frontend"
+      ]
+    },
+    {
+      "title": "JavaScript Fundamentals",
+      "slug": "js-fundamentals",
+      "shortDescription": "أساسيات الجافاسكربت للمبتدئين.",
+      "description": "تعرف على المتغيرات، الدوال، DOM، والـ ES6.",
+      "level": "beginner",
+      "price": 10,
+      "thumbnail": "./imges/4674020.jpg",
+      "tags": [
+        "javascript",
+        "frontend",
+        "programming"
+      ]
+    },
+    {
+      "title": "Data Analysis with Python",
+      "slug": "data-analysis-python",
+      "shortDescription": "مقدمة لتحليل البيانات باستخدام بايثون.",
+      "description": "تعلم pandas, numpy, وطرق تنظيف وتحليل البيانات.",
+      "level": "intermediate",
+      "price": 25,
+      "thumbnail": "./imges/2047.jpg",
+      "tags": [
+        "python",
+        "pandas",
+        "data"
+      ]
+    }
+  ]
+}

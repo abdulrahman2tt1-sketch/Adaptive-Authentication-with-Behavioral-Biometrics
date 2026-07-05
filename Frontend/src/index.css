@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@theme {
+  --color-bony-50: #fbfbf8;
+  --color-bony-100: #f6f6f3;
+  --color-bony-200: #e9e4e2;
+  --color-bony-300: #d9d2ce;
+  --color-bony-400: #af9f97;
+  --color-bony-500: #806d64;
+  --color-bony-600: #5d5248;
+  --color-bony-700: #4b4038;
+  --color-bony-800: #2c2221;
+  --color-bony-900: #1f1814;
+  --color-bony-950: #0e0907;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 223 47% 14%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 223 47% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 212 27% 84%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-bony-300 text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-bony-500 text-bony-300 hover:bg-bony-500/90 px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-accent {
+    @apply bg-bony-500 text-bony-300 hover:bg-bony-500/90 px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply border-2 border-bony-500 text-bony-500 hover:bg-bony-500 hover:text-bony-300 px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  }
+
+  .card-course {
+    @apply bg-bony-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-border;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-bony-800 ;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-bony-600 mt-2;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border outline-none ring-1 ring-bony-400 border-input bg-bony-200 text-bony-500 focus:outline-none focus:ring-2 focus:ring-bony-500 focus:border-transparent transition-all duration-200;
+  }
+
+  .badge-level {
+    @apply px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide;
+  }
+
+  .badge-beginner {
+    @apply badge-level bg-green-100 text-green-700;
+  }
+
+  .badge-intermediate {
+    @apply badge-level bg-yellow-100 text-yellow-700;
+  }
+
+  .badge-advanced {
+    @apply badge-level bg-red-100 text-red-700;
+  }
+
+  .nav-link {
+    @apply text-bony-500 hover:text-bony-800 font-medium transition-colors duration-200;
+  }
+
+  .container-main {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.1) 0%, hsl(var(--accent) / 0.1) 100%);
+  }
+}
